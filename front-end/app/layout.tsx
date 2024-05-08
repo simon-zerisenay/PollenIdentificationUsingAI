@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Footer from "@/components/section/footer";
+import { FormProvider } from "@/context/context";
 
 export const metadata: Metadata = {
 	title: {
@@ -41,6 +42,7 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+					<FormProvider>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
@@ -48,6 +50,7 @@ export default function RootLayout({
 						</main>
 						<Footer/>
 					</div>
+					</FormProvider>
 				</Providers>
 			</body>
 		</html>

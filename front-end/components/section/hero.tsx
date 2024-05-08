@@ -24,7 +24,7 @@ export default function Hero() {
 			<div className="flex gap-3">
 				<Link
 					isExternal
-					href='/'
+					href='/signup'
 					className="bg-gradient-to-t from-yellow-700 to-yellow-400 px-5 py-3 rounded-lg text-white text-lg "
 				>
 					Get Started
